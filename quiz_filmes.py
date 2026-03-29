@@ -10,13 +10,13 @@ if resposta == "1999":
     pontos = pontos + 1
 else:
     print("❌ Errado! A resposta certa é 1999.")
-resposta = input("Que ator interpreta o personagem principal em Matrix")
+resposta = input("Que ator interpreta o personagem principal em Matrix? ")
 if resposta.lower() == "keanu reeves":
     print("✅ Correto!")
     pontos = pontos + 1
 else:
     print("❌ Errado! A resposta certa é Keanu Reeves.")
-resposta = input("Qual é o bruxo mais famoso do cinema?")
+resposta = input("Qual é o bruxo mais famoso do cinema?\n")
 if resposta.lower() == "harry potter":
     print("✅ Correto!")
     pontos = pontos + 1

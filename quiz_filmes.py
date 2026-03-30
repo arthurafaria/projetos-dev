@@ -22,5 +22,17 @@ if resposta.lower() == "harry potter":
     pontos = pontos + 1
 else: 
     print("❌ Errado! A resposta certa é Harry Potter.")
-print(f"\nVocê acertou {pontos} de 3 perguntas.")
+resposta = input("Quem interpreta o personagem principal no filme Marty Supreme (2025)? ")
+if resposta.lower() == "timothée chalamet" or resposta.lower() == "timothee chalamet":
+    print("✅ Correto!")
+    pontos = pontos + 1
+else:
+    print("❌ Errado! A resposta certa é Timothée Chalamet.")
+resposta = input("Quem dirigiu o filme Marty Supreme (2025)? ")
+if resposta.lower() == "josh safdie":
+    print("✅ Correto!")
+    pontos = pontos + 1
+else:
+    print("❌ Errado! A resposta certa é Josh Safdie.")
+print(f"\nVocê acertou {pontos} de 5 perguntas.")
     

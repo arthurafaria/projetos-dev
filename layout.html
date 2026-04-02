@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arthur Faria — Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cor-primaria: #1a1a2e;
+      --cor-destaque: #00b4a6;
+      --cor-texto: #333333;
+      --cor-fundo: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cor-fundo);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--cor-primaria);
+      padding: 16px 48px;
+    }
+
+    .navbar .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar .links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .navbar .links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 48px;
+  background: linear-gradient(135deg, #ffffff 60%, #e8f8f7 100%);
+}
+    .hero-tag {
+  display: inline-block;
+  background: #e8f8f7;
+  color: var(--cor-destaque);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid var(--cor-destaque);
+}
+
+    .hero-texto {
+      max-width: 520px;
+    }
+
+    .hero-texto h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      color: var(--cor-primaria);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .hero-texto p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .botao {
+      background: var(--cor-destaque);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .hero-imagem {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+    
+
+    .projetos {
+      padding: 48px;
+    }
+
+    .projetos h2 {
+      font-size: 28px;
+      margin-bottom: 24px;
+      color: var(--cor-primaria);
+    }
+
+    .grid-projetos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+    }
+
+    .card {
+     background: white;
+     border-radius: 12px;
+     padding: 24px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        border-top: 3px solid var(--cor-destaque);
+     transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+    .card-img {
+      width: 100%;
+      height: 160px;
+      background: #e0e0e0;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--cor-primaria);
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 16px;
+    }
+
+    .card a {
+      font-size: 14px;
+      color: var(--cor-destaque);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">Arthur Faria</div>
+    <div class="links">
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-texto">
+        <span class="hero-tag">👋 Estudante de Comunicação & Dev</span>
+      <h1>Olá, eu sou o Arthur.</h1>
+      <p>Estudante de Comunicação aprendendo a transformar ideias em produtos digitais.</p>
+      <a href="#projetos" class="botao">Ver meus projetos</a>
+    </div>
+    <img src="foto.jpg" class="hero-imagem" alt="Arthur Faria">
+  </section>
+
+  <section class="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="grid-projetos">
+      <div class="card">
+        <div class="card-img"></div>
+        <h3>Quiz de Filmes</h3>
+        <p>Aplicação em Python com perguntas e pontuação.</p>
+        <a href="#">Ver projeto</a>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3>Página Web</h3>
+        <p>Primeira página HTML e CSS publicada online.</p>
+        <a href="#">Ver projeto</a>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3>Projeto 3</h3>
+        <p>Em breve — algo novo chegando.</p>
+        <a href="#">Ver projeto</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
